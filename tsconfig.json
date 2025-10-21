@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noImplicitAny": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/lib/prisma.js", 
+    "src/app/api/user/route.ts",
+    "src/types/next-auth.d.ts", "src/app/api/upload/routeee.js", "src/app/blogs/page.jsx", "src/app/blogs/add-blog/page.jsx", "src/app/blogs/[slug]/page.jsx", "src/app/admin/page.jsx", "src/app/api/add-categories/route.js", "src/app/blogs/update-blog/[slug]/page.jsx", "src/app/api/user/[email]/route.js", "src/app/api/blogs/related/[slug]/routes.js", "src/app/api/users/[email]/route.js", "src/components/Hero/HomeHero.jsx" ],
+
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,144 @@
+@media only screen 
+and (device-width: 320px) 
+and (device-height: 658px) 
+and (-webkit-device-pixel-ratio: 4.5) { 
+
+    .mobile-padding {
+        padding-top: 120px;
+    }
+
+    .heading-font {
+        font-size: 18px;
+    }
+
+    .pfont {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Carousel */
+.carousel {
+    width: 100%; /* Allow full width for all screens */
+  }
+  
+  @media (min-width: 768px) {
+    .carousel {
+      /* Adjust width for tablets */
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .carousel {
+      /* Adjust width for desktops */
+      width: 90%;
+    }
+  }
+
+  /* Tailwind */
+
+  @keyframes spin-3d {
+    0% {
+      transform: rotateY(180deg);
+    }
+    50% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+
+  }
+
+  .animate-spin-3d {
+    animation: spin-3d 10s linear infinite;
+  }
+
+
+  @keyframes bounce {
+    0%, 100% {
+        transform: translateX(-1%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: translateX(1%);
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bouns {
+    animation: bounce 2s infinite;
+}
+.animate-bouns-fast {
+  animation: bounce 1s infinite;
+}
+
+
+@keyframes ping {
+  75%, 100% {
+      transform: scale(1);
+      opacity: 0;
+  }
+}
+.animate-pings {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Spin */
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spins {
+  animation: spin 10s linear infinite;
+}
+.animate-spinx {
+  animation: spin 5s linear infinite;
+}
+
+
+/* videos */
+
+  /* Desktop and larger screens */
+  .video-sizes {
+    width: 100%;
+    max-width: 700px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  /* Laptop and larger tablets */
+  @media (max-width: 1200px) {
+    .video-sizes {
+      max-width: 100%;
+    }
+  }
+  
+  /* Smaller tablets and larger mobile phones */
+  @media (max-width: 900px) {
+    .video-sizes {
+      max-width: 100%;
+    }
+  }
+  
+  /* Smaller mobile phones */
+  @media (max-width: 600px) {
+    .video-sizes {
+      max-width: 100%;
+      height: 300px;
+    }
+  }
+  
+  /* Very small screens */
+  @media (max-width: 400px) {
+    .video-sizes {
+      height: 200px;
+    }
+  }
+
+
+  .my-captions {
+    font-size: 8px; 
+  }
